@@ -1,0 +1,78 @@
+# visual
+#———————————————————————————————————————————————————————————————————————————
+PS1="$(pwd) 💩 ⁉️ |"
+
+
+# Aliases 
+#———————————————————————————————————————————————————————————————————————————
+alias taudaq='echo pwd=Ycoda734;ssh -Y taudaq@taudaq'
+alias taudaq2='echo pwd=1ppmgf;ssh -Y l_daq@taudaq2'
+alias JLAB='echo pwd=Ff\$123456;ssh -Y cohen@login.jlab.org'
+alias LINGO2='echo pwd=Dd123456;ssh -Y erezcoh4@lingo2.tau.ac.il'
+alias Electron='echo pwd= Aa\$123456;ssh -Y ecohen@electron.tau.ac.il'
+
+alias GitAdd='git add .'
+alias GitCommit='git commit -m "$(date)"'
+alias GitPush='git push'
+alias gitpush='GitAdd && GitCommit && GitPush'
+
+alias ls='ls -G'
+alias ll='ls -lth'
+alias OpenSoftware='open *.cxx *.h mac/*.py'
+alias MySoftware='open ~/larlite/UserDev/mySoftware/MySoftwarePackage/*.cxx  ~/larlite/UserDev/mySoftware/MySoftwarePackage/*.h'
+
+
+alias ipynb='ipython notebook'
+
+
+# Environmental variables
+#———————————————————————————————————————————————————————————————————————————
+export MyJlab=cohen@login.jlab.org
+export DataMining=/Users/erezcohen/Desktop/DataMining
+export DataMiningAnaFiles=$DataMining/AnaFiles
+export SIMCFiles=/Users/erezcohen/Desktop/A3/Simulation/simc_files
+export PYTHONPATH=/Users/erezcohen/Python/xgboost/python-package
+
+
+# Directions to specific locations 
+#———————————————————————————————————————————————————————————————————————————
+
+echo set environmental variables and Aliases
+#source .profile
+
+
+# ROOT-6
+#———————————————————————————————————————————————————————————————————————————                                             
+  . $(brew --prefix root6)/libexec/thisroot.sh
+
+
+# LArLite
+#———————————————————————————————————————————————————————————————————————————                                             
+# source larlite/config/setup.sh
+
+
+# Geant4
+#———————————————————————————————————————————————————————————————————————————                                             
+source .Geant4_profile
+
+
+# uBoone
+#———————————————————————————————————————————————————————————————————————————                                                                                                                                                                                                            
+source .uboone_profile
+
+# MacPorts
+#———————————————————————————————————————————————————————————————————————————                                             
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+
+
+
+echo set environmental variables and Aliases
+
+
+
+# shortcuts
+alias GoEG2='cdtop; cd UserDev/CLASEG2DataMining/EG2DataMiningPackage; OpenSoftware; echo now in CLASEG2…'
+alias GoAnaTrees='cdtop; cd UserDev/AnalysisTreesInformation/AnaTreesPackage; OpenSoftware; echo now in AnalysisTreesInformation…'
+alias MissionsProjects='open /Users/erezcohen/Desktop/Projects/General'
+

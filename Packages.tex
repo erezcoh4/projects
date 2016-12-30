@@ -1,0 +1,96 @@
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+
+\makeatletter
+\def\ps@pprintTitle{%
+  \let\@oddhead\@empty
+  \let\@evenhead\@empty
+  \let\@oddfoot\@empty
+  \let\@evenfoot\@oddfoot
+}
+\makeatother
+
+\usepackage{float}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{siunitx}
+\usepackage{soul}
+\usepackage{graphicx}  % figures
+\usepackage{dcolumn}   % tables
+\usepackage{multirow}  % tables
+\usepackage{bm}        % math
+\usepackage{amssymb}   % math
+\usepackage{amsmath}   % math
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage{hyperref}  % hyper-links 
+\usepackage{breakurl}
+\hypersetup{breaklinks = true, colorlinks = true, citecolor = blue, linkcolor = blue, urlcolor = blue}
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+\usepackage{enumitem}
+\usepackage{enumerate}
+
+% page numbering
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{- \thepage ~-}
+\fancyhead[R]{\today}
+
+% text background color for tracking changes
+\definecolor{shadecolor}{RGB}{180,180,180}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+
+% for tables and lists
+\usepackage{makecell}
+\usepackage{cleveref}
+\usepackage{listings}
+
+% quotes
+\usepackage{csquotes}
+
+
+% diagrams
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric}
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, font=\large, draw, top color=brown!40, bottom color=yellow!30, text width=3.5cm, text centered, rounded corners, minimum height=4em, drop shadow]
+\tikzstyle{line} = [draw, color=brown!60,very thick,-latex']
+\tikzstyle{cloud} = [node distance=7cm,minimum height=2em]
+
+\tikzset{ treenode/.style = {every node/.style={align=center}, inner sep=2pt, text centered,font=\large, node distance=7cm},
+	arn_n/.style = {treenode, diamond, white, font=\sffamily\bfseries, draw=black, fill=black, text width=4.5em,level distance=100cm},
+	arn_r/.style = {treenode, rectangle,draw, top color=brown!40, bottom color=yellow!30, text width=4.5cm, font=\large, text centered, rounded corners, minimum height=2cm,level distance=100cm, drop shadow},
+	arn_x/.style = {treenode, rectangle, minimum width=0.0em, minimum height=0.em}
+		}
+		
+\tikzstyle{mystyle}=[align=center,fill=white,top color=brown!40, bottom color=yellow!30,drop shadow,draw,thick,rectangle,overlay,minimum width=20mm, minimum height=1.5cm,text width=45mm,font=\large,rounded corners]
+
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\smartdiagramset{circular distance=4cm,
+	font=\large,
+	text width=3.5cm,
+	module minimum width=3.5cm,
+	module minimum height=2cm,
+	arrow tip=to,
+	border color=black,
+	set color list={red!50,orange!50,blue!50,black!30,green!50},
+	additions={
+       			additional item offset=15mm,
+       			additional item text width=45mm,
+       			additional item height=15mm,
+       			additional item shape=rectangle,
+       			additional item border color=black,
+       			additional item shadow=drop shadow,
+       			%additional item color=gray!50!black,
+       			additional arrow color=gray!50!black,
+	     }
+}
+
+
